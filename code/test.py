@@ -3,11 +3,11 @@ import websocket, json, ssl
 def on_open(ws):
     # ws.send(json.dumps({
     #     "event": "bts:subscribe",
-    #     "data": {"channel": "live_trades_btceur"}
+    #     "data": {"channel": "live_trades_etheur"}
     # }))
     ws.send(json.dumps({
         "event": "bts:subscribe",
-        "data": {"channel": "order_book_btceur"}
+        "data": {"channel": "order_book_etheur"}
     }))
 
 def on_message(ws, message):
